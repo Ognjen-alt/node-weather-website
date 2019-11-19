@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="icon" href="/img/weather_fav.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Weather | Home</title>
+</head>
+
+<body>
+    <div class="main-content">
+    {{>header}}
+        <p>Najtačnija vremenska prognoza</p>
+
+        <form action="">
+            <input placeholder="Lokacija">
+            <button>Pretraži</button>
+        </form>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
