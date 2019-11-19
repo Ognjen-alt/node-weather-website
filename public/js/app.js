@@ -1,4 +1,3 @@
-console.log('Klijentov js fajl je učitan.')
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
