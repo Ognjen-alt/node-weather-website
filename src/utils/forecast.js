@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Nije moguće pronaći traženu lokaciju. Pokušajte sa novim unosom.', undefined)
         } else {
-            callback(undefined, 'Trenutna temperatura je ' + body.currently.temperature + ' farenhajta. Vlažnost vazduha je ' + body.currently.humidity +'. ' + 'Šansa za kišu je: ' + body.currently.precipProbability + '%.')
+            callback(undefined, 'Prognoza za sutra. Ukratko: ' + body.daily.summary + ' Trenutna temperatura je ' + body.daily.temperature + ' farenhajta. Vlažnost vazduha je ' + body.daily.humidity +'. ' + 'Šansa za kišu je: ' + body.daily.precipProbability + '%.')
         }
     })
 }
